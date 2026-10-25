@@ -1,5 +1,5 @@
 {
-    'name': 'Sale Line Clipboard',
+    'name': 'Order Line Clipboard',
     'version': '19.0.1.1.0',
 
 
