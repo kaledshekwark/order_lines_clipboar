@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="line_copy_wizard_form" model="ir.ui.view">
+        <field name="name">line.copy.wizard.form</field>
+        <field name="model">line.copy.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Copy Lines">
+                <div class="mb-2">
+                    <span class="me-3">From: <field name="source" class="fw-bold"/></span>
+                    <button name="action_select_all" string="Select All" type="object" class="btn-link"/>
+                    <button name="action_unselect_all" string="Unselect All" type="object" class="btn-link"/>
+                </div>
+                <field name="line_ids" nolabel="1">
+                    <list editable="bottom" create="0" delete="0">
+                        <field name="selected" widget="boolean_toggle"/>
+                        <field name="product_id"/>
+                        <field name="quantity"/>
+                        <field name="uom_id"/>
+                        <field name="price_unit"/>
+                    </list>
+                </field>
+                <footer>
+                    <button name="action_copy" string="Copy" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

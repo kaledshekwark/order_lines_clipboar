@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_line_clipboard_user,line.clipboard user,model_line_clipboard,base.group_user,1,1,1,1
+access_line_copy_wizard_user,line.copy.wizard user,model_line_copy_wizard,base.group_user,1,1,1,1
+access_line_copy_wizard_line_user,line.copy.wizard.line user,model_line_copy_wizard_line,base.group_user,1,1,1,1
