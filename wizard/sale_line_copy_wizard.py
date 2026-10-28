@@ -42,7 +42,7 @@ class LineCopyWizard(models.TransientModel):
             'source': self.source,
         } for index, line in enumerate(selected)])
         return Clipboard._notify(
-            _("%(count)s line(s) copied from %(source)s. Open a sale order, purchase order or transfer and click 'Paste Lines'.",
+            _("%(count)s line(s) copied from %(source)s. Open a sale order, purchase order, transfer or invoice and click 'Paste Lines'.",
               count=len(selected), source=self.source),
             {'type': 'ir.actions.act_window_close'},
         )

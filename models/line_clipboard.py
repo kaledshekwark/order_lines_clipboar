@@ -19,7 +19,7 @@ class LineClipboard(models.Model):
     def _get_user_lines(self):
         lines = self.search([('user_id', '=', self.env.uid)])
         if not lines:
-            raise UserError(_("Your clipboard is empty. Use 'Copy Lines' on a sale order, purchase order or transfer first."))
+            raise UserError(_("Your clipboard is empty. Use 'Copy Lines' on a sale order, purchase order, transfer or invoice first."))
         return lines
 
     @api.model
